@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:stretchColumns="4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mycolor"
+        android:gravity="center"
+        android:text="@string/Titulo"
+        android:textColor="@color/white" />
+
+    <TableRow>
+        <TextView
+            android:background="@color/marron"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="@string/codigo" />
+
+        <EditText
+            android:id="@+id/inpcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@color/marron"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Descripción" />
+
+        <EditText
+            android:id="@+id/inpDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/azulclaro"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="@string/Categoria" />
+
+        <EditText
+            android:id="@+id/inpCategori"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:background="@color/azulclaro"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Minimo" />
+
+        <EditText
+            android:id="@+id/inpMini"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:background="@color/marron"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Descontinuado" />
+
+        <RadioGroup
+            android:id="@+id/Radiobuton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SI" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No " />
+        </RadioGroup>
+
+        <TextView
+            android:background="@color/marron"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Maximo" />
+
+        <EditText
+            android:id="@+id/inpMax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </TableRow>
+
+
+    <TableRow
+        >
+        <TextView
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonACCEPTAR"
+            android:layout_width="100dp"
+            android:text="@string/Aceptar"
+            android:layout_height="50dp"
+            android:layout_marginLeft="520dp"
+            android:layout_gravity=""/>
+    </TableRow>
+
+
+
+
+</TableLayout>

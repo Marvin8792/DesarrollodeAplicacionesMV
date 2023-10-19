@@ -1,18 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+
+    android:background="@color/white"
+    android:stretchColumns="1">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/mycolor"
+        android:gravity="center"
+        android:text="@string/Titulo"
+        android:textColor="@color/white" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/azulclaro"
+            android:textStyle="bold"
+            android:id="@+id/codigo"
+            android:padding="3dip"
+            android:text="@string/codigo" />
+
+        <EditText
+            android:id="@+id/inpcode"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/marron"
+            android:textStyle="bold"
+            android:padding="3dip"
+            android:text="@string/Descripción" />
+
+        <EditText
+            android:id="@+id/inpDescription"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/azulclaro"
+            android:textStyle="bold"
+            android:id="@+id/categoria"
+            android:padding="3dip"
+            android:text="@string/Categoria" />
+
+        <EditText
+            android:id="@+id/inpCategori"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/marron"
+            android:textStyle="bold"
+            android:id="@+id/minimo"
+            android:padding="3dip"
+            android:text="@string/Minimo" />
+
+        <EditText
+            android:id="@+id/inpMini"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/azulclaro"
+            android:textStyle="bold"
+            android:id="@+id/maximo"
+            android:padding="3dip"
+            android:text="@string/Maximo" />
+
+        <EditText
+            android:id="@+id/inpMax"
+            android:gravity="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:background="@color/marron"
+            android:textStyle="bold"
+            android:id="@+id/descontinuado"
+            android:layout_marginTop="10dp"
+            android:padding="3dip"
+            android:text="@string/Descontinuado" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Radiobuton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SI" />
+
+            <RadioButton
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No " />
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:padding="3dip" />
+
+        <com.google.android.material.button.MaterialButton
+            android:textStyle="bold"
+            android:id="@+id/buttonACCEPTAR"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/Aceptar" />
+    </TableRow>
+
+
+</TableLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="codigo">code</string>
+    <string name="Descripción">Description</string>
+    <string name="Categoria">Category</string>
+    <string name="Minimo">Minimum</string>
+    <string name="Maximo">" Maximum"</string>
+    <string name="Descontinuado">Discontinued</string>
+    <string name="SI">Yes</string>
+    <string name="Titulo">General product data</string>
+    <string name="Aceptar">Accept</string>
+</resources>
