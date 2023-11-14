@@ -13,6 +13,7 @@ import android.widget.ListView
 import android.util.Log
 import com.marvin.a14_firebaseaccess.entities.cls_Category
 import com.google.firebase.firestore.FirebaseFirestore
+import com.marvin.a14_firebaseaccess.ui.categories.CategoryAdapter
 
 const val valorIntentLogin = 1
 class MainActivity : AppCompatActivity() {

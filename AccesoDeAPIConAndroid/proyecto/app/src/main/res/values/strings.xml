@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">proyecto_moviles</string>
+
+    <string name="olvido">¿Olvidó su contrasña?</string>
+</resources>
