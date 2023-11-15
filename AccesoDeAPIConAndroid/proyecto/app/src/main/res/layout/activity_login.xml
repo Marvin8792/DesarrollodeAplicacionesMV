@@ -53,26 +53,23 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Binvenido"
+                android:text="@string/Binvenido"
                 android:textColor="@color/black"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:alpha="0.7"
-                android:text="Por favor ingrese su informacion" />
+                android:layout_height="wrap_content"/>
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="30dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:alpha="0.7"
-                android:text="Correo Electronico" />
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/correo"/>
 
             <EditText
                 android:id="@+id/textEmail"
@@ -89,7 +86,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:alpha="0.7"
-                android:text="Contraseña" />
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/contra" />
 
             <EditText
                 android:id="@+id/textPassword"
@@ -108,7 +107,7 @@
                     android:id="@+id/rbtSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Recordar Contraseña"
+                    android:text="@string/RecondarContra"
                     android:layout_centerVertical="true"
                     android:alpha="0.7"/>
 
@@ -143,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:alpha="0.7"
                 android:layout_gravity="center"
-                android:text="Registrarse con" />
+                android:text="" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -172,13 +171,18 @@
                     android:background="@drawable/gorjeo"/>
             </LinearLayout>
 
-
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/registrarse" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-
 
 </RelativeLayout>
 

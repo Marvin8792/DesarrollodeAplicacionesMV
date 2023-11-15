@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.users.SignupActivity">
+    tools:context=".ui.users.SignupActivity"
+    android:background="@drawable/background">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_primary"
+        android:alpha="0.4"></RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="28dp"
+        android:id="@+id/card_view"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/fullName"/>
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/done_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/correo"/>
+
+            <EditText
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/done_icon"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/contra" />
+
+            <EditText
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/password_icon"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/Recontra"/>
+
+            <EditText
+                android:id="@+id/recontra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/password_icon"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:text="@string/grado"/>
+
+            <EditText
+                android:id="@+id/grado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:drawableEnd="@drawable/done_icon"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSignup"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:text="Sign Up"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:cornerRadius="32dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

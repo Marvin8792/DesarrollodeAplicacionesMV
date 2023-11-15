@@ -1,0 +1,24 @@
+<resources>
+    !-- Nombre de la aplicacion -->
+    <string name="app_name">proyecto_moviles</string>
+
+    !-- Text del Login -->
+    <string name="olvido">¿Olvidó su contrasña?</string>
+    <string name="Binvenido">Binvenido</string>
+    <string name="informacion">Por favor ingrese su informacion</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="contra">Contraseña</string>
+    <string name="RecondarContra">Recordar Ccntraseña</string>
+
+    !-- Text del sign up -->
+    <string name="fullName">Nombre completo</string>
+    <string name="Recontra">Repite la Contraseña</string>
+    <string name="crearCuenta">Crear Cuenta</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="grado">Grado Escolar</string>
+
+    !-- Text del main Activity -->
+    <string name="welcome_message">¡Bienvenido a nuestra increíble aplicación de Biología! En este fascinante viaje, explorarás los misterios y maravillas del mundo biológico. Sumérgete en el tejido de la vida y descubre las complejidades que definen todas las formas de vida en nuestro planeta.</string>
+    <string name="start_button_label">Comenzar</string>
+    <string name="welcome_image_description">Imagen de bienvenida</string>
+</resources>
