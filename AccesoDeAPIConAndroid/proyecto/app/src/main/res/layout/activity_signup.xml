@@ -92,7 +92,7 @@
                 android:text="@string/Recontra"/>
 
             <EditText
-                android:id="@+id/recontra"
+                android:id="@+id/textrePassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -111,7 +111,7 @@
                 android:text="@string/grado"/>
 
             <EditText
-                android:id="@+id/grado"
+                android:id="@+id/textGradoE"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
