@@ -1,21 +1,27 @@
 package com.marvin.a14_firebaseaccess.ui.categories
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.core.content.ContextCompat.startActivity
 import com.bumptech.glide.Glide
 import com.marvin.a14_firebaseaccess.R
 import com.google.firebase.storage.FirebaseStorage
 import com.marvin.a14_firebaseaccess.entities.cls_Category
+import com.marvin.a14_firebaseaccess.ui.customers.moduloOrden
 
+
+val btnStar: Button = TODO()
 
 class CategoryAdapter
     (context: Context, dataModalArrayList: ArrayList<cls_Category?>?) :
     ArrayAdapter<cls_Category?>(context, 0, dataModalArrayList!!) {
 
     var imgs = FirebaseStorage.getInstance()
+
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var listitemView = convertView
@@ -31,12 +37,17 @@ class CategoryAdapter
 
         val imageCategory = listitemView.findViewById<ImageView>(R.id.imgCategory)
 
+        val addProductButton = listitemView.findViewById<Button>(R.id.addProduct)
         if (dataModal != null) {
             categoryID.setText(dataModal.CategoryID.toString())
             categoryName.setText(dataModal.CategoryName)
             description.setText(dataModal.Description)
             Glide.with(context).load(dataModal.urlImage).into(imageCategory)
+
         }
+
+
+
 
         listitemView.setOnClickListener { // on the item click on our list view.
             // we are displaying a toast message.
