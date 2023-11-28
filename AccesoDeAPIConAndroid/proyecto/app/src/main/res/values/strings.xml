@@ -21,4 +21,5 @@
     <string name="welcome_message">¡Bienvenido a nuestra increíble aplicación de Biología! En este fascinante viaje, explorarás los misterios y maravillas del mundo biológico. Sumérgete en el tejido de la vida y descubre las complejidades que definen todas las formas de vida en nuestro planeta.</string>
     <string name="start_button_label">Comenzar</string>
     <string name="welcome_image_description">Imagen de bienvenida</string>
+    <string name="default_web_client_id">1:186541561201:android:ea435d7593022e798f12d0</string>
 </resources>
