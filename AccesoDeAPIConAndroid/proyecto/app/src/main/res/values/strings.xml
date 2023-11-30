@@ -4,7 +4,7 @@
 
     !-- Text del Login -->
     <string name="olvido">¿Olvidó su contrasña?</string>
-    <string name="Binvenido">Binvenido</string>
+    <string name="BinvenidoLogin">Binvenido</string>
     <string name="informacion">Por favor ingrese su informacion</string>
     <string name="correo">Correo Electronico</string>
     <string name="contra">Contraseña</string>
@@ -18,8 +18,8 @@
     <string name="grado">Grado Escolar</string>
 
     !-- Text del main Activity -->
-    <string name="welcome_message">¡Bienvenido a nuestra increíble aplicación de Biología! En este fascinante viaje, explorarás los misterios y maravillas del mundo biológico. Sumérgete en el tejido de la vida y descubre las complejidades que definen todas las formas de vida en nuestro planeta.</string>
+    <string name="welcome_message">Bienvenido a nuestra emocionante aplicación dedicada a la fascinante disciplina de la biología.</string>
     <string name="start_button_label">Comenzar</string>
     <string name="welcome_image_description">Imagen de bienvenida</string>
-    <string name="default_web_client_id">1:186541561201:android:ea435d7593022e798f12d0</string>
+    <string name="default_web_client_id">186541561201-9u0d0rhhir70esg0rjmckqv18ecpg9ha.apps.googleusercontent.com</string>
 </resources>
