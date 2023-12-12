@@ -5,12 +5,98 @@
     android:layout_height="match_parent"
     tools:context=".fileFragment">
 
-    <TextView
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Documentos"
-        android:gravity="center"
-        android:textColor="@color/green"
-        android:textSize="36dp"/>
+        android:gravity="center">
+
+        <!-- Primera fila -->
+        <LinearLayout
+            android:id="@+id/firstRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:src="@drawable/foto_sintecis"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Es el proceso biológico mediante el cual las plantas, algas y algunas bacterias convierten la luz solar en energía química, almacenada en forma de glucosa."/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/verte_brados"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="son animales que poseen una columna vertebral, también conocida como espina dorsal o columna vertebral, compuesta por vértebras."/>
+        </LinearLayout>
+
+        <!-- Segunda fila -->
+        <LinearLayout
+            android:layout_below="@id/firstRowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:src="@drawable/animales_invertebrados"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Son animales que carecen de columna vertebral o espina dorsal. Este grupo abarca una asombrosa diversidad de formas de vida y constituye la gran mayoría de las especies animales en la Tierra."/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/felino_worl"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Son animales carnívoros que se caracterizan por tener garras retráctiles, dientes afilados y una musculatura poderosa que los hace ágiles cazadores. Son conocidos por su agudeza sensorial, particularmente una visión nocturna excepcional y oído agudo."/>
+        </LinearLayout>
+
+        <!-- Agrega más filas según sea necesario -->
+
+    </RelativeLayout>
+
+
+
 
 </FrameLayout>
